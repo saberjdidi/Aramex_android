@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Aramex</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="no_internet_connection">No internet Connection</string>
+    <string name="no_internet_txt">Your internet connection is currently \n not available please check or try again.</string>
+    <string name="try_again">Try Again</string>
+    <string name="delivery_info">Delivery info</string>
+    <string name="food_delivery_desc">Delivered between monday aug and thursday 20 from 8pm to 9:32 pm</string>
+    <string name="return_policy">Return policy</string>
+    <string name="return_policy_txt">All our foods are double checked before leaving our stores so by any case you found a broken food please contact our hotline immediately.</string>
+    <string name="order_now">Order Now</string>
+    <string name="food_name">Food Name</string>
+    <string name="food_price">Food Price</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="invalid_search">Enter search of Collis</string>
+    <string name="invalid_name">Name is required</string>
+    <string name="invalid_expediteur">Please fill in the sender field</string>
+    <string name="invalid_destinateur">Please fill in the recipient field</string>
+    <string name="invalid_unity">Please enter unity</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="registerUser">New user? Register Now</string>
+    <string name="otherMethod">Use other Methods</string>
+    <string name="suivi">Suivi</string>
+    <string name="searchCollis">Type your tracking number</string>
+    <string name="invalid_lat_name">LastName is required</string>
+    <string name="invalid_user_name">Username is required</string>
+    <string name="invalid_email">Email invalid</string>
+    <string name="invalid_phone">Phone number is required</string>
+    <string name="invalid_password">Password is required</string>
+</resources>

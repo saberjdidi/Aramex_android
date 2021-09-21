@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F9">
+    <ImageView
+        android:id="@+id/menuIv"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_food_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/food_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/app_name"
+        android:padding="5dp"
+        android:src="@drawable/ic_food_cart"
+        app:layout_constraintBottom_toBottomOf="@+id/menuIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menuIv" />
+
+    <TextView
+        android:id="@+id/food_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/app_name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Aramex"
+        app:layout_constraintStart_toStartOf="@+id/menuIv"
+        app:layout_constraintTop_toBottomOf="@+id/menuIv" />
+
+    <EditText
+        android:id="@+id/food_search"
+        android:layout_width="314dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rectangle_background"
+        android:backgroundTint="#EFEEEE"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:hint="Search..."
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        app:drawableStartCompat="@drawable/ic_food_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_title" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/food_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@xml/radius_corner_tabbedmain"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:isScrollContainer="true"
+        app:layout_constraintEnd_toEndOf="@+id/food_search"
+        app:layout_constraintStart_toStartOf="@+id/food_search"
+        app:layout_constraintTop_toBottomOf="@+id/food_search"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/food_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_tab" />
+
+    <!-- <com.google.android.material.bottomnavigation.BottomNavigationView
+         android:id="@+id/bottom_navigation"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:layout_constraintEnd_toEndOf="@id/food_viewpager"
+         app:layout_constraintStart_toEndOf="@id/food_viewpager"
+         app:layout_constraintBaseline_toBottomOf="@id/food_viewpager"
+         app:menu="@menu/item_menu" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

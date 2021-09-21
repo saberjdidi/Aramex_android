@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:background="#FFFFFF"
+    android:layout_gravity="center"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    tools:context=".Fragments.CollisFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#EFEEEE"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="Gerer les Colis"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="18sp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp">
+            <EditText
+                android:id="@+id/searchEt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle_border"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:hint="@string/searchCollis"
+                android:textColor="@android:color/black"
+                app:drawableStartCompat="@drawable/ic_food_search"
+                android:textSize="15sp"/>
+                <Button
+                    android:id="@+id/suiviBtn"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/suivi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="16sp"
+                    android:background="@drawable/custom_button"/>
+              <!--  <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_food_search"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>-->
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_textcollis"
+                android:text="Separer les numeros de suivi par une espace et virgule"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/whiteTextColor"/>
+           <!-- <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/auExpediteur"
+                android:hint="title"
+                android:layout_marginTop="15dp"
+                android:padding="12dp"
+                android:background="@drawable/rectangle_background" />-->
+
+
+           <!-- <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/searchBtn"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="S'inscrire"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="2dp"
+                app:spinning_bar_width="4dp" />-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardView1"/>
+
+    <TextView
+        android:id="@+id/emptyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="120dp"
+        android:gravity="center"
+        android:text="Empty List"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+</RelativeLayout>
+</ScrollView>
